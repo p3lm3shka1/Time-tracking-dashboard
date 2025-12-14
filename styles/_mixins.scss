@@ -1,0 +1,32 @@
+@use "_variables" as *;
+
+//body-template
+@mixin body-template {
+  padding: 0;
+  margin: 0;
+  height: $height-full;
+  width: $w-full;
+  font-size: $fs-body;
+  color: $white-text;
+}
+
+//flex template
+@mixin flex-simple {
+  display: flex;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//grid template
+@mixin grid-simple {
+  display: grid;
+}
+
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
