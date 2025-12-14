@@ -21,7 +21,7 @@ function renderCards() {
     container.innerHTML += `
       <div class="card ${slug}">
         <div class="card-top">
-          <img src="../images/icon-${slug}.svg" alt="icons">
+          <img src="./images/icon-${slug}.svg" alt="icons">
         </div>
 
         <div class="card-content">
@@ -49,3 +49,4 @@ document.querySelectorAll(".timeline button").forEach((btn) => {
 });
 
 loadData();
+
