@@ -168,43 +168,33 @@ body {
     padding: $space-2 $space-1;
     gap: $space-2;
   }
-
   .dashboard {
     .profile {
       width: 100%;
-
       .user-card {
-        // верхний фиолетовый блок как на мобиле
         display: flex;
         align-items: center;
         gap: $space-1;
         padding: $space-2;
-
         .avatar {
           margin-bottom: 0;
           width: 70px;
         }
-
-        // чтобы "Report for" и имя были компактно справа
         p {
           margin: 0 auto;
           font-size: $fs-md;
         }
-
         h1 {
           margin: 0;
           font-size: 1.5rem;
           line-height: 1.2;
         }
       }
-
       .timeline {
-        // кнопки в одну строку
         flex-direction: row;
         justify-content: space-between;
         padding: $space-1 $space-2 $space-2;
         gap: 0;
-
         button {
           text-align: center;
           width: 33.33%;
@@ -212,33 +202,22 @@ body {
       }
     }
   }
-
   .cards-grid {
     grid-template-columns: 1fr;
     gap: $space-2;
-
     .card {
       .card-top {
-        height: 70px; // на мобиле шапка чуть выше
+        height: 70px; 
         img {
-          width: 70px; // иконка заметнее
+          width: 70px; 
           margin-right: $space-1;
         }
       }
-
       .card-content {
-        margin-top: -24px; // чтобы "вылезало" сильнее как в макете
-
-        // шапка карточки Work ... (три точки справа)
+        margin-top: -24px; 
         h2 {
           margin: 0;
         }
-
-        // ✅ layout как на скрине:
-        // слева большие часы, справа "Last Week - ..."
-
-        // делаем низ карточки в две колонки
-        // (это самый близкий к макету вариант без правки HTML)
         display: grid;
         grid-template-columns: 1fr auto;
         grid-template-areas:
@@ -246,20 +225,16 @@ body {
           "hours prev";
         align-items: center;
         row-gap: 0.6rem;
-
         h2 {
           grid-area: title;
         }
-
         span {
           grid-area: dots;
           display: none;
         }
-
         .hours {
           grid-area: hours;
         }
-
         .previous {
           grid-area: prev;
           justify-self: end;
@@ -269,3 +244,4 @@ body {
     }
   }
 }
+
